@@ -1,5 +1,21 @@
 # castp-Script
 
+## Update
+
+The script `auto_castp` now fully supports headless Linux machines without GUI. And geckodriver is no longer needed. The workflow of this script is the following:
+
+- Download pdb files from AlphaFold data bank directly
+
+- Upload pdb file to castp site automatically
+
+- Get results from castp site automatically
+
+- Extract the poc table from the castp results and save to excel files
+
+**Note that not all Mega-1-1 ids are valid for AlphaFold (and UniProt). Invalid ids are skipped and recorded in `failed.txt`.**
+
+## Intro
+
 A Python script to run [CASTp](http://sts.bioe.uic.edu/castp/calculation.html) code from the command line.
 
 CASTp (expanded as Computed Atlas of Surface Topography of Proteins) is  an online tool used for finding surface pockets and internal cavities in proteins which are possibly active sites for ligand binding.
